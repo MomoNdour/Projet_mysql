@@ -12,19 +12,53 @@ $membre=$stmt->fetchObject();
 <head>
 	<title>Ajouter</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<style>
+		.container
+		{
+			padding: 5%;
+		}
+	</style>
 </head>
 <body>
-<form method="post" action="Remod.php">
-	<table>
-		<tr>
-			<input type="hidden" name="id_membre" value="<?php echo($membre->id_membre);?>">
-			<input type="text" name="Prenom" value="<?php echo($membre->Prenom);?>">
-			<input type="text" name="Nom" value="<?php echo($membre->Nom);?>">
-			<input type="text" name="num_departement" value="<?php echo($membre->num_departement);?>">
-			<input type="submit" name="Ajouter">
-			<input type="reset" name="Annuler">
-		</tr>
-	</table>
-</form>
+	<div class="container-fluid">
+		<div class="container">
+			<h3>Modification de l'enregistrement: <?php echo($membre->Prenom).'&nbsp'.($membre->Nom);?></h3>
+			<form method="post" action="Remod.php">
+							<div class="row">
+								<div class="col">
+									<input  class="form-control" type="hidden" name="id_membre" value="<?php echo($membre->id_membre);?>">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<input type="text" class="form-control" name="Prenom" value="<?php echo($membre->Prenom);?>">
+								</div>
+							</div><br>
+
+							<div class="row">
+								<div class="col">
+							<input type="text" class="form-control" name="Nom" value="<?php echo($membre->Nom);?>">
+								</div>
+							</div><br>
+
+							<div class="row">
+								<div class="col">
+							<input type="text" class="form-control" name="num_departement" value="<?php echo($membre->num_departement);?>">
+								</div>
+							</div><br>
+
+							<div >
+								<input class="btn btn-primary" type="submit" name="Ajouter">
+								<input class="btn btn-danger" type="reset" name="Annuler" >
+							</div>
+
+							<div>
+								
+							</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
