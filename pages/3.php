@@ -1,6 +1,6 @@
 <?php
 // APPEL DE LA PAGE CONNEXION.PHP
-    include 'connexion.php';
+    include 'pages/connexion.php';
 // DECLARATION D'UNE VARIABLE bdd POUR RECUPERER LA FONCTION Connexion
     $bdd = Connexion();
 

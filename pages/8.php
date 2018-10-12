@@ -1,6 +1,6 @@
 <?php
 // APPEL DE LA PAGE CONNEXION.PHP
-include 'connexion.php';
+include 'pages/connexion.php';
 // DECLARATION D'UNE VARIABLE bdd POUR RECUPERER LA FONCTION Connexion
     $bdd = Connexion();
 // AFFICHAGE DU NOM DE CHAQUE APPRENANT AVEC SON DEPARTEMENT DE RESIDENCE
@@ -11,4 +11,5 @@ while($data = $requete_join->fetch())
 {
     echo '<p>'.$data['id_membre'].'&nbsp'.$data['Prenom'].'&nbsp'.$data['Nom'].'&nbsp'.'&nbsp'.$data['Nom_departement'].'</p><br>';
 }
+$requete_join->closeCursor();
 ?>

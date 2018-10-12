@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    padding: 70px 0 30px;
+}
+.title > h3{
+    margin: 0;
+    padding: 0;
+    color: #00A5FF;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.container{
+    width: 50%;
+    height: 400px;
+    background: #ffffff;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    box-shadow: 0 15px 40px rgba(0,0,0,.7);
+    border-radius: 10px;
+    display: flex;
+}
+.container > .left{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background: url("../images/login.png") 20% 50%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.container > .right {
+    float: right;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+}
+.formBox{
+    width: 100%;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    height: 400px;
+}
+/* .formBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px;
+    color: #1A293A;
+} */
+.formBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formBox input[type="text"],
+.formBox input[type="password"]{
+    background: #ffffff;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid #00A5FF;
+    outline: none;
+    height: 40px;
+    color: #1A293A;
+}
+.formBox input[type="text"]:focus,
+.formBox input[type="password"]:focus{
+    border-bottom: 2px solid #93A5B0;
+    color: #93A5B0;
+}
+.formBox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: rgb(29, 28, 28);
+    background-color: #1b8ac9;
+    cursor: pointer;
+}
+.formBox input[type="submit"]:hover{
+    background-color: #9dc7df;
+    color: rgb(29, 28, 28);
+}
